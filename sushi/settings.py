@@ -26,7 +26,7 @@ SECRET_KEY = '&zhm)(nuk=uzp%(*226m&**kvz&fl9&mf@7opz^^k%b^x51yn*'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'sushi.wsgi.application'
 
 REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 3,
+    # 'PAGE_SIZE': 3,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 # Database
